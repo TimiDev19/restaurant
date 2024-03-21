@@ -1,0 +1,155 @@
+.homepage {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.headerContainer {
+    width: auto;
+    margin-left: 50px;
+    align-self: flex-start;
+}
+  
+.headerContainer h1 {
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    font-size: 90px;
+    height: 60px;
+    font-weight: 50;
+    color: white;
+}
+  
+.headerContainer p {
+    padding: 0;
+    font-size: 40px;
+    font-weight: lighter;
+    color: white;
+}
+  
+.headerContainer button {
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: left;
+    justify-content: left;
+    background-color: white;
+    height: 50px;
+    width: 180px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: lighter;
+}
+  
+.headerContainer button:hover {
+    background-color: white;
+    cursor: pointer;
+    box-shadow: 0px 0px .5rem white;
+    transition: 0.3s ease-in;
+}
+
+.advert-box{
+    padding: 20px;
+}
+
+.advert-container{
+    width: 90%;
+    justify-content: center;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.advert-container img{
+    width: 300px;
+    height: 200px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 .5rem grey;
+    transition: .5s ease;
+}
+
+.advert-container img:hover{
+    cursor: pointer;
+    box-shadow: 0 0 1rem grey;
+    width: 320px;
+    height: 220px;
+}
+
+@media (max-width: 1006px) {
+    .advert-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .advert-container img{
+        width: 350px;
+        height: 250px;
+    }
+    .advert-container img:hover{
+        width: 370px;
+        height: 270px;
+    }
+}
+@media (max-width: 775px) {
+    .advert-container{
+        display: list-item;
+    }
+    .advert-container img{
+        width: 80%;
+        height: auto;
+    }
+    .advert-container img:hover{
+        width: 83%;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .home {
+      justify-content: center;
+      align-items: center;
+    }
+ 
+  
+    .headerContainer {
+      margin: auto;
+      border-radius: 10px;
+      padding: 10px;
+      width: 80%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-color: #121619;
+      color: white;
+    }
+  
+    .headerContainer h1 {
+      font-size: 40px;
+      height: 30px;
+      color: white;
+    }
+  
+    .headerContainer p {
+      font-size: 30px;
+      color: white;
+    }
+  
+    .headerContainer button {
+      background-color: white;
+      color: #121619;
+      margin-bottom: 30px;
+    }
+  
+    .headerContainer button:hover {
+      background-color: rgb(225, 225, 225);
+      color: #121619;
+    }
+  }

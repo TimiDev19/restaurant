@@ -1,0 +1,60 @@
+.reservationspage{
+    background-color: #121619;
+    padding: 20px;
+    margin: 0;
+    height: 100vh;
+}
+
+.reservationspage h1{
+    font-size: 50px;
+    text-align: center;
+    font-family: cursive;
+    color: white;
+}
+
+.reservationForm{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.reservationForm input{
+    font-size: 14px;
+    color: white;
+    margin: 10px 20px;
+    padding: 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+.reservationForm .submit{
+    background-color: white;
+    color: #121619;
+    width: 200px;
+    margin: auto;
+    text-align: center;
+    align-content: center;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.reservationForm .submit:hover{
+    box-shadow: 0 0 .5rem white;
+}
+
+.reservationForm select{
+    font-size: 14px;
+    color: white;
+    margin: 10px 20px;
+    padding: 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: none;
+    background-color: #121619;
+}
+
+.reservationForm input::placeholder{
+    color: white;
+    font-size: 14px;
+}
